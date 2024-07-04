@@ -97,7 +97,7 @@ main{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding:0 30px;
+    padding:0 45px;
 }
 
 section{
@@ -132,6 +132,9 @@ h4{
 
 p{
   color: var(--text-black-900);
+}
+p:not(:last-child){
+	margin-bottom: 15px;
 }
 
 /* ///////////////////////
@@ -174,7 +177,7 @@ aside nav li a.active{
 
 aside .mobile-button{
     position: absolute;
-    right: -45px;
+    display: none;
     top: 20px;
 }
 
@@ -267,11 +270,11 @@ aside .mobile-button{
 }
 
 #home .home-hello{
-    width: 60%;
+    width: 53%;
 }
 
 #home .home-hero{
-    width: 40%;
+    width: 45%;
 }
 
 #home .typing{
@@ -367,6 +370,8 @@ aside .mobile-button{
 
  #work article img{  
   border-radius: 15px;
+  border: 1px solid var(--skin-color);
+  padding: 20px;
  }
 
  #work article a{
@@ -378,6 +383,7 @@ aside .mobile-button{
 
  #work article .details{
   margin: 0 20px;
+  width: 50%;
  }
 
   /* ///////////////////////
@@ -404,6 +410,7 @@ aside .mobile-button{
  #contact .details{
   display: flex;
   flex-direction: column;
+  padding: 0 40px;
  }
 
  #contact .details div{
